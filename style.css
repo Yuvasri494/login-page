@@ -90,4 +90,51 @@ body{
     font-size: larger;
     color: azure;
     
+
+}
+/* Desktop (default) */
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.nav {
+    display: flex;
+    gap: 15px;
+}
+
+.hamburger {
+    display: none; /* Hidden on desktop */
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Mobile only */
+@media (max-width: 768px) {
+    .nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: #333;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .nav a {
+        color: white;
+        padding: 8px 0;
+        text-decoration: none;
+    }
+
+    .hamburger {
+        display: block; /* Show hamburger only on mobile */
+    }
+
+    .nav.active {
+        display: flex; /* Show menu when active */
+    }
 }
