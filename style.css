@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.name{
+    color: bisque;
+}
+body{
+    
+    background-color: violet;
+    background-image: url(im.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+.navigation{
+    width: 100%;
+    height:15vh;
+
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+.navigation a{
+    padding-right: 20px;
+    text-decoration: none;
+    font-size: larger;
+    forced-color-adjust: white;
+}
+.container{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+}
+.container .login{
+    
+    width:400px;
+    height: 250px;
+    padding: 40px 30px;
+
+}
+.login h2{
+    color: black;
+    text-shadow: 0ch;
+    text-align: center;
+}
+.inputbox{
+    margin-bottom: 6px;
+}
+.inputbox label{
+    color:black;
+    font-size: large;
+    font-style: oblique;
+
+}
+.inputbox input{
+    width: 100%;
+    height: 40px;
+    border-radius: 30px;
+    font-size: larger;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+.remainder{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    
+
+}
+
+.remainder label{
+    color: white;
+    font-style: italic;
+    font-size: medium;
+
+}
+.Submit{
+    width: 50%;
+    height: 30px;
+    border-radius: 40px;
+    font-weight: 100;
+    margin-left: 80px;
+}
+.mar{
+    font-size: larger;
+    color: azure;
+    
+}
