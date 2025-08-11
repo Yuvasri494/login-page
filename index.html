@@ -8,17 +8,19 @@
 </head>
 <body>
     <div class="navigation">
-        <nav class="nav">
+    <div class="name">
+        <h2>yuvasri</h2>
+    </div>
+    <nav class="nav" id="navMenu">
         <a href="">Home</a>
         <a href="">About</a>
         <a href="">Contact us</a>
         <a href="">Help</a>
-        </nav>
-        <div class="name">
-            <h2>yuvasri</h2>
-            
-        </div>
+    </nav>
+    <div class="hamburger" id="hamburger">
+        ☰
     </div>
+</div>
     <div class="container">
         <div class="login">
             <form action="">
@@ -45,6 +47,16 @@
         </div>
     </div>
     <marquee class="mar" behavior="scroll" direction="right">Click here to Login in</marquee>
+    <script>
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('navMenu');
+
+    hamburger.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+    });
+</script>
+
     
 </body>
 </html>
+
